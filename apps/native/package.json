@@ -1,0 +1,20 @@
+{
+  "name": "@app/native",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "echo 'Native shell delegates to web build'",
+    "test": "echo 'No native tests in Milestone A'",
+    "sync": "pnpm --filter @app/web build && cap sync",
+    "open:ios": "cap open ios",
+    "open:android": "cap open android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2",
+    "@capacitor/preferences": "^6.0.3"
+  }
+}
